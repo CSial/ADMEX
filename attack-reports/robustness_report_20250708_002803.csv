@@ -1,0 +1,2 @@
+Model,Dataset Type,Num Samples,Clean Accuracy (%),ART Clean Accuracy (%),Adversarial Accuracy (%),Attack,Defense,Accuracy Drop (%),Adversarial Loss,Empirical Robustness,CLEVER L2 Score,Custom Loss Sensitivity,Date
+fgsm_defended_20250707_010353.pth,Test,1220,69.0,69.0,49.59016393442623,Square Attack,FGSM Adversarial Training,19.40983606557377,1.5632518330558403,119.795715,1.0,0.0036521463189274073,2025-07-08 00:28:03

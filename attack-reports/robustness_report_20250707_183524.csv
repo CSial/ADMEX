@@ -1,0 +1,2 @@
+Model,Dataset Type,Num Samples,Clean Accuracy (%),ART Clean Accuracy (%),Adversarial Accuracy (%),Attack,Defense,Accuracy Drop (%),Adversarial Loss,Empirical Robustness,CLEVER L2 Score,Custom Loss Sensitivity,Date
+model_trained_fgsm_20250707_000023.pth,Test,1000,73.4,73.4,35.8,DeepFool,FGSM Adversarial Training,37.60000000000001,0.9205731201171875,135.52167,1.0,0.0048999483697116375,2025-07-07 18:35:24

@@ -1,0 +1,2 @@
+Model,Dataset Type,Num Samples,Clean Accuracy (%),ART Clean Accuracy (%),Adversarial Accuracy (%),Attack,Defense,Accuracy Drop (%),Adversarial Loss,Empirical Robustness,CLEVER L2 Score,Custom Loss Sensitivity,Date
+pgd_defended_20250707_011627.pth,Test,1220,73.0,73.0,53.93442622950819,NewtonFool,PGD Adversarial Training,19.06557377049181,1.0543891281378073,120.1287,1.0,0.048593226820230484,2025-07-08 20:37:23

@@ -1,0 +1,2 @@
+Model,Dataset Type,Num Samples,Clean Accuracy (%),ART Clean Accuracy (%),Adversarial Accuracy (%),Attack,Defense,Accuracy Drop (%),Adversarial Loss,Empirical Robustness,CLEVER L2 Score,Custom Loss Sensitivity,Date
+resnet18_pcam_epoch_20_20250630_233444.pth,Test,1010,83.0,N/A,45.445544554455445,DeepFool,Jpeg Compression,37.554455445544555,2.027027696666151,125.7817,1.0,0.006816322449594736,2025-07-09 12:16:58
