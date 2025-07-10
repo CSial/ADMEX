@@ -4,11 +4,12 @@ import streamlit as st
 from art.attacks.evasion import ProjectedGradientDescent
 from art.estimators.classification import PyTorchClassifier
 
+#PGD attack based on ART evasion attack
 def run_pgd_attack(model, x_test, y_test, device="cpu", eps=0.1, alpha=0.01, iters=40):
     model.to(device).eval()
 
     x_tensor = torch.tensor(x_test, dtype=torch.float32).to(device)
-    #y_tensor = torch.tensor(y_test, dtype=torch.long).to(device)-> removed because it is not needed for untargeted attacks
+    #y_tensor = torch.tensor(y_test, dtype=torch.long).to(device)-> not needed for untargeted attacks
 
     classifier = PyTorchClassifier(
         model=model,

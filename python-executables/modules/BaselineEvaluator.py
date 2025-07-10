@@ -8,6 +8,7 @@ from torch.utils.data import TensorDataset, DataLoader
 from art.estimators.classification import PyTorchClassifier
 from art.utils import compute_accuracy,to_categorical
 
+#class for uploading and evaluating baseline of model
 class BaselineEvaluator:
     def __init__(self):
         self.model = None

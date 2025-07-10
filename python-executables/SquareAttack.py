@@ -4,6 +4,7 @@ import torch
 from art.attacks.evasion import SquareAttack
 from art.estimators.classification import PyTorchClassifier
 
+#Square attack based on ART evasion attack
 def run_square_attack(model, dataloader, device="cpu", eps=0.05):
     model.to(device).eval()
 

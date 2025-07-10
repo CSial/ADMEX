@@ -12,12 +12,12 @@ class Home:
                 Welcome to the <strong>Adversarial Model Evaluation eXperimenter (ADMEX)</strong>.<br><br>
                 This tool helps you:
                 <ul style='text-align: left; margin: 0 auto; max-width: 500px;'>
-                    <li>Assess your AI model's robustness</li>
-                    <li>Launch attacks against your model</li>
-                    <li>Apply defenses and compare performance</li>
-                    <li>Visualize performance metrics</li>
+                    <li>Assess your AI model's robustness.</li>
+                    <li>Launch attacks against your model.</li>
+                    <li>Apply defenses and compare performance.</li>
+                    <li>Visualize performance metrics.</li>
                 </ul>
-                Use the sidebar to begin.
+                Use the sidebar on the left to begin.
             </div>
             """,
             unsafe_allow_html=True

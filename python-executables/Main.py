@@ -56,7 +56,7 @@ class Main:
         PageClass = self.pages.get(selection)
         if PageClass:
             if PageClass == AttackDashboard:
-                page = PageClass(folder_path=r"C:\Users\csial\Desktop\Thesis\Tool\project-name\attack-reports")
+                page = PageClass(folder_path=r"....ADMEX\attack-reports")
             else:
                 page = PageClass()
             page.run()

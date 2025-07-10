@@ -4,6 +4,7 @@ from fpdf import FPDF
 import pandas as pd
 from datetime import datetime
 
+#class for printing and exporting attack results
 class RobustnessReport:
     def __init__(self):
         #retrieve all info passed to session state
@@ -114,7 +115,7 @@ class RobustnessReport:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
             #path hidden for privacy, in future use this can be improved to be dynamic path and not hard coded
-            folder = r"C:\Users\csial\Desktop\Thesis\Tool\project-name\attack-reports"
+            folder = r"...ADMEX\attack-reports"
             os.makedirs(folder, exist_ok=True)
 
             #pass all the columns

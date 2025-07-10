@@ -1,9 +1,10 @@
 import streamlit as st
 import os
 
+#helper function to maintain session info
 def show_session_info():
-    st.sidebar.markdown("### Session Overview")
-    st.sidebar.markdown("#### Model Info")
+    st.sidebar.markdown("Session Overview")
+    st.sidebar.markdown("Model Info")
 
     #store info on session state-> needed for attacks, defenses and report generator
     if "uploaded_model" in st.session_state:

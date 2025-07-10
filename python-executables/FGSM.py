@@ -2,8 +2,8 @@ import torch
 import numpy as np
 from art.attacks.evasion import FastGradientMethod
 from art.estimators.classification import PyTorchClassifier
-from torch.utils.data import DataLoader, TensorDataset
 
+#FGSM attack based on ART evasion attack
 def run_fgsm_attack(model, x_test, y_test, device="cpu", epsilon=0.03, batch_size=32):
 
     model.to(device).eval()

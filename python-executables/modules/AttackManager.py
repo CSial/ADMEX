@@ -11,6 +11,7 @@ from FGSM import run_fgsm_attack
 from PGD import run_pgd_attack
 from SquareAttack import run_square_attack
 
+#custom emprirical robustness metric
 def compute_custom_empirical_robustness(x_clean, x_adv, y_true, y_adv_pred):
     deltas = x_adv - x_clean
     norms = np.linalg.norm(deltas.reshape(deltas.shape[0], -1), ord=2, axis=1)

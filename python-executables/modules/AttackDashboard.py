@@ -56,7 +56,7 @@ class AttackDashboard:
 
         df["Defense"] = df.apply(self.get_defense, axis=1)
 
-        #reformat defense name to more user friendly pattern
+        # reformat defense name to be more user friendly pattern
         df["Defense"] = df["Defense"].str.strip().str.lower().replace({
             "fgsm": "FGSM", 
             "pgd": "PGD", 

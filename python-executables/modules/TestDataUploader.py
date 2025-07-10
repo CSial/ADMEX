@@ -9,7 +9,7 @@ class TestDataUploader:
     def __init__(self):
 
         #path hidden for privacy, in future use this can be improved to be dynamic path and not hard coded
-        self.base_path = r"C:\Users\csial\Desktop\Thesis\Data\Dataset"
+        self.base_path = r"...ADMEX\Data\Dataset"
 
         #system takes as input the clean .h5 files from the patch cameloyn dataset
         self.choices = {

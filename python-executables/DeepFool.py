@@ -3,6 +3,7 @@ import numpy as np
 from art.estimators.classification import PyTorchClassifier
 from art.attacks.evasion import DeepFool
 
+#DeepFool attack based on ART evasion attack
 def run_deepfool_attack(model, dataloader, device="cpu", eps=0.02):
     model.to(device)
     model.eval()

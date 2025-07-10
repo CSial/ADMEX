@@ -84,7 +84,7 @@ class DefenseManager:
                 channels_first=True,
                 device_type="cpu",
             )
-
+            
             y_train = self.y_train
             if isinstance(y_train, torch.Tensor):
                 y_train = y_train.cpu().numpy()
@@ -105,7 +105,7 @@ class DefenseManager:
                 path = generate_model_save_path("fgsm")
                 torch.save(self.model.state_dict(), path)
 
-            #apply ootb MadryPGD attack method
+            #apply ootb attack method MadryPGD
             elif method == "PGD":
                 trainer = AdversarialTrainerMadryPGD(classifier, nb_epochs=5, eps=0.03)
                 trainer.fit(self.x_train, y_train)
