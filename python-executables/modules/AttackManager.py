@@ -39,7 +39,7 @@ def custom_loss_sensitivity(model, x, y, device):
 class AttackManager:
     def __init__(self):
         self.model = st.session_state.get("uploaded_model", None)
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cpu")
     
     #evaluate the predicted labels for the given tensor
     def batched_predict(self, x_tensor, batch_size=64):
