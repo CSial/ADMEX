@@ -23,7 +23,7 @@ def show_session_info():
     if "model_arch" in st.session_state:
         st.sidebar.write(f"Architecture: `{st.session_state['model_arch']}`")
 
-    st.sidebar.markdown("#### Dataset Info")
+    st.sidebar.markdown("Dataset Info")
     if "test_images" in st.session_state:
         img_count = st.session_state["test_images"].shape[0]
         st.sidebar.write(f"Test Samples: `{img_count}`")
