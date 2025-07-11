@@ -20,10 +20,10 @@ Model is created with resnet-18 architecture and trained with the full train dat
 if __name__ == "__main__":
 
     #path hidden for privacy, in future use, this can be improved to be dynamic path and not hard coded
-    train_x_path = r"C:\Users\csial\Desktop\Thesis\Data\Dataset\camelyonpatch_level_2_split_train_x.h5"
-    train_y_path = r"C:\Users\csial\Desktop\Thesis\Data\Dataset\camelyonpatch_level_2_split_train_y.h5"
-    metadata_path = r"C:\Users\csial\Desktop\Thesis\Data\Dataset\camelyonpatch_level_2_split_test_meta.csv"
-    model_save_dir = r"C:\Users\csial\Desktop\Thesis\trained-models"
+    train_x_path = r"\camelyonpatch_level_2_split_train_x.h5"
+    train_y_path = r"\camelyonpatch_level_2_split_train_y.h5"
+    metadata_path = r"\camelyonpatch_level_2_split_test_meta.csv"
+    model_save_dir = r"\trained-models"
     os.makedirs(model_save_dir, exist_ok=True)
 
     transform = transforms.Compose([
