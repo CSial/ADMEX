@@ -1,6 +1,7 @@
 #To run this application, you need to install the below required packages and libraries in Windows:
 #Step 1. Install Python if not already installed->https://www.python.org/downloads/windows/
 #Step 2. Run the command -> pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+#App was created using Visual Studio Code Version: 1.102.0
 
 adversarial_robustness_toolbox==1.20.0
 altair==4.2.2
